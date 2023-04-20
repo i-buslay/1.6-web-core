@@ -1,0 +1,46 @@
+.read {
+  background-color: none;
+  border: none;
+  padding: 0;
+  color: #1b1c21;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  &--hide {
+    display: none !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.8s;
+  }
+
+  img {
+    margin-right: 5px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media (min-device-width: 768px) {
+  .read {
+    margin-left: 24px;
+
+    &--hidden {
+      display: flex;
+    }
+  }
+}
+
+@media (min-device-width: 1366px) {
+  .read {
+    margin-left: 32px;
+  }
+}

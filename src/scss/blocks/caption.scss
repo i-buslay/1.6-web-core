@@ -1,0 +1,70 @@
+.caption {
+  display: none;
+  grid-template-columns: 380px 1fr 3fr;
+  p {
+    &:first-of-type {
+      display: grid;
+      padding-left: 38px;
+
+      &::before {
+        content: 'Ремонтные услуги';
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+        margin-bottom: 4px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      display: grid;
+      padding-left: 38px;
+
+      &::before {
+        content: 'Цена';
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+        margin-bottom: 4px;
+      }
+    }
+
+    &:last-of-type {
+      display: grid;
+      padding-left: 32px;
+
+      &::before {
+        content: 'Срок';
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) {
+  .caption {
+    display: grid;
+  }
+}
+
+@media (min-device-width: 1366px) {
+  .caption {
+    display: grid;
+
+    p {
+      &:first-of-type {
+        padding-left: 48px;
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 48px;
+      }
+
+      &:last-of-type {
+        padding-left: 38px;
+      }
+    }
+  }
+}

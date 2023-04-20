@@ -1,0 +1,44 @@
+.interaction {
+  margin-left: auto;
+  display: flex;
+  &__check {
+    margin-left: 16px;
+  }
+
+  &--hr::before {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  &--hidden {
+    display: none !important;
+    img {
+      margin: 8px;
+    }
+  }
+
+  button {
+    padding: 0;
+    background-color: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    &:hover {
+      cursor: pointer;
+      filter: hue-rotate(-90deg);
+      transition: all 0.8s;
+    }
+  }
+}
+
+@media (min-device-width: 1366px) {
+  .interaction--hidden {
+    display: flex !important;
+  }
+}

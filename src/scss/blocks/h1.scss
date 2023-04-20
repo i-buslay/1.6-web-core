@@ -1,0 +1,30 @@
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  display: flex;
+  &::before {
+    content: '';
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    margin-right: 12px;
+    border-radius: 2px;
+  }
+}
+
+@media (min-device-width: 768px) {
+  h1 {
+    &::before {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-device-width: 1366px) {
+  h1 {
+    &::before {
+      margin-right: 28px;
+    }
+  }
+}

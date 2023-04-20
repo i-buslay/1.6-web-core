@@ -1,0 +1,36 @@
+.aside-top {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+
+  &__left-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    background-color: none;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    margin-left: 16px;
+  }
+}
+
+@media (min-device-width: 1366px) {
+  .aside-top {
+    &__logo {
+      margin-left: 0;
+    }
+
+    &__burger-close {
+      display: none;
+    }
+  }
+}

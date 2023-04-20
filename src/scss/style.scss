@@ -1,17 +1,38 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import 'fonts';
+
+@import 'blocks/main.scss';
+@import 'blocks/header.scss';
+@import 'blocks/top-block.scss';
+@import 'blocks/interaction.scss';
+@import 'blocks/h-content.scss';
+@import 'blocks/navigation.scss';
+@import 'blocks/article.scss';
+@import 'blocks/read.scss';
+@import 'blocks/brands.scss';
+@import 'blocks/technic.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/prices.scss';
+@import 'blocks/order.scss';
+@import 'blocks/caption.scss';
+@import 'blocks/offer.scss';
+@import 'blocks/aside-top.scss';
+@import 'blocks/aside.scss';
+@import 'blocks/feedback.scss';
+@import 'blocks/aside-bottom.scss';
+@import 'blocks/lang.scss';
+@import 'blocks/swiper-slide.scss';
+@import 'blocks/swiper--h160.scss';
+@import 'blocks/h1.scss';
+@import 'blocks/block-feedback.scss';
+@import 'blocks/block-call.scss';
