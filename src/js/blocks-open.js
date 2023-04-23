@@ -13,6 +13,9 @@ const openChatInteraction2 = blockAbout.querySelector('.interaction__repair')
 
 const openChatOffer = document.querySelector('.offer__open')
 
+const openPrices = document.querySelector('.prices__list')
+const openPricesButton = openPrices.querySelectorAll('.order')
+
 const blockChat = document.querySelector('.block-feedback')
 const blockCall = document.querySelector('.block-call')
 
@@ -61,3 +64,11 @@ blockCallClose.addEventListener('click', function () {
   blockCall.classList.toggle('block-call--hide')
   blockMain.classList.toggle('main--none')
 })
+
+for (var i = 0; i < openPricesButton.length; i++) {
+  openPricesButton[i].addEventListener('click', function () {
+    console.log(openPricesButton)
+    blockCall.classList.toggle('block-call--hide')
+    blockMain.classList.toggle('main--none')
+  })
+}
