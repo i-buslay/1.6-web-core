@@ -84,7 +84,7 @@
     display: flex; }
   .top-block button {
     padding: 0;
-    background-color: none;
+    background-color: #fff;
     border: none; }
     .top-block button:hover {
       cursor: pointer;
@@ -130,7 +130,7 @@
       margin: 8px; }
   .interaction button {
     padding: 0;
-    background-color: none;
+    background-color: #f8f8f8;
     border: none;
     display: flex;
     align-items: center;
@@ -286,6 +286,8 @@
         left: 12.5px;
         top: 12.5px;
         z-index: 0; }
+  .brands button {
+    background-color: #f8f8f8; }
 
 @media (min-device-width: 768px) {
   .brands {
@@ -308,7 +310,7 @@
   margin: 16px auto;
   width: 224px; }
   .technic__list {
-    margin-bottom: 16px; }
+    margin-bottom: 32px; }
   .technic__item {
     max-width: 224px; }
     .technic__item p {
@@ -349,6 +351,8 @@
         transform: rotate(135deg);
         left: 12.5px;
         top: 12.5px; }
+  .technic button {
+    background-color: #f8f8f8; }
 
 @media (min-device-width: 768px) {
   .technic {
@@ -604,7 +608,7 @@
     display: flex;
     align-items: center; }
   .aside-top button {
-    background-color: none;
+    background-color: #fff;
     border: none;
     padding: 0; }
     .aside-top button:hover {
@@ -628,10 +632,12 @@
   font-weight: 500; }
   .aside--hide {
     display: none; }
-  .aside button:hover {
-    -webkit-filter: hue-rotate(-90deg);
-            filter: hue-rotate(-90deg);
-    transition: all 0.8s; }
+  .aside button {
+    background-color: #fff; }
+    .aside button:hover {
+      -webkit-filter: hue-rotate(-90deg);
+              filter: hue-rotate(-90deg);
+      transition: all 0.8s; }
   .aside__1 {
     height: 100vh;
     display: grid;
@@ -682,7 +688,7 @@
 .feedback {
   padding-right: 20px; }
   .feedback button {
-    border: none;
+    border: #fff;
     background-color: none;
     padding: 0; }
     .feedback button:hover {
@@ -776,7 +782,7 @@ h1 {
     padding-left: 16px;
     padding-bottom: 0; }
     .block-feedback__1 button {
-      background-color: none;
+      background-color: #fff;
       border: none;
       height: 40px;
       width: 40px; }
@@ -858,7 +864,7 @@ h1 {
     padding-left: 16px;
     padding-bottom: 0; }
     .block-call__1 button {
-      background-color: none;
+      background-color: #fff;
       border: none;
       height: 40px;
       width: 40px; }
