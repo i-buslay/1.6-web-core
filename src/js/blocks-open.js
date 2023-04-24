@@ -21,35 +21,42 @@ const blockCall = document.querySelector('.block-call')
 
 openCallHeader.addEventListener('click', function () {
   blockCall.classList.toggle('block-call--hide')
+  document.getElementById('tel-call').focus()
 })
 
 openChatHeader.addEventListener('click', function () {
   blockChat.classList.toggle('block-feedback--hide')
+  document.getElementById('feedback-name').focus()
 })
 
 openCallAside.addEventListener('click', function () {
   blockCall.classList.toggle('block-call--hide')
   blockMain.classList.toggle('main--none')
+  document.getElementById('tel-call').focus()
 })
 
 openChatAside.addEventListener('click', function () {
   blockChat.classList.toggle('block-feedback--hide')
   blockMain.classList.toggle('main--none')
+  document.getElementById('feedback-name').focus()
 })
 
 openChatInteraction1.addEventListener('click', function () {
   blockChat.classList.toggle('block-feedback--hide')
   blockMain.classList.toggle('main--none')
+  document.getElementById('feedback-name').focus()
 })
 
 openChatInteraction2.addEventListener('click', function () {
   blockChat.classList.toggle('block-feedback--hide')
   blockMain.classList.toggle('main--none')
+  document.getElementById('feedback-name').focus()
 })
 
 openChatOffer.addEventListener('click', function () {
   blockChat.classList.toggle('block-feedback--hide')
   blockMain.classList.toggle('main--none')
+  document.getElementById('feedback-name').focus()
 })
 
 const blockChatClose = blockChat.querySelector('.block-feedback__1')
@@ -67,8 +74,8 @@ blockCallClose.addEventListener('click', function () {
 
 for (var i = 0; i < openPricesButton.length; i++) {
   openPricesButton[i].addEventListener('click', function () {
-    console.log(openPricesButton)
     blockCall.classList.toggle('block-call--hide')
     blockMain.classList.toggle('main--none')
+    document.getElementById('tel-call').focus()
   })
 }
